@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: ${ORDER_DB_URL:jdbc:postgresql://localhost:5432/orders_db}
+    username: ${ORDER_DB_USERNAME:postgres}
+    password: ${ORDER_DB_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+product-service:
+  base-url: ${PRODUCT_SERVICE_BASE_URL:http://localhost:8082}
+

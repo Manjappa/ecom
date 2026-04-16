@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: product-service
+  mvc:
+    servlet:
+      load-on-startup: 1
+  datasource:
+    url: ${PRODUCT_DB_URL:jdbc:postgresql://localhost:5432/products_db}
+    username: ${PRODUCT_DB_USERNAME:postgres}
+    password: ${PRODUCT_DB_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
