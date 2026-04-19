@@ -8,9 +8,9 @@ spring:
     servlet:
       load-on-startup: 1
   datasource:
-    url: ${PRODUCT_DB_URL:jdbc:postgresql://localhost:5432/products_db}
+    url: ${PRODUCT_DB_URL:jdbc:postgresql://35.202.108.34:5432/products_db}
     username: ${PRODUCT_DB_USERNAME:postgres}
-    password: ${PRODUCT_DB_PASSWORD:root}
+    password: ${PRODUCT_DB_PASSWORD:root@123456OK}
   jpa:
     hibernate:
       ddl-auto: update

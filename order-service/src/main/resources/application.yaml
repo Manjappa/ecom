@@ -5,9 +5,9 @@ spring:
   application:
     name: order-service
   datasource:
-    url: ${ORDER_DB_URL:jdbc:postgresql://localhost:5432/orders_db}
+    url: ${ORDER_DB_URL:jdbc:postgresql://35.202.108.34:5432/orders_db}
     username: ${ORDER_DB_USERNAME:postgres}
-    password: ${ORDER_DB_PASSWORD:root}
+    password: ${ORDER_DB_PASSWORD:root@123456OK}
   jpa:
     hibernate:
       ddl-auto: update
